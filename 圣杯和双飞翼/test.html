@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 40px;
+        background-color: darkseagreen;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 200px;
+        /*height: 200px;*/
+        overflow: hidden;
+    }
+
+    .middle {
+        width: 100%;
+        height: 200px;
+        background-color: deeppink;
+        float: left;
+    }
+
+    .left {
+        margin-left: -100%;
+
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        float: left;
+        position: relative;
+        left: -200px;
+    }
+
+    .right {
+        margin-left: -200px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        right: -210px;
+        background-color: darkorchid;
+        float: left;
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: green;
+        text-align: center;
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>Header内容区</h4>
+    </header>
+    <div class="container">
+        <div class="middle">比如，一个没有设定高度的块状元素，其高度是自动的，具体来说就是由它里面的文档流最后的位置决定的。假设它里面有一个出于文档流中的子元素，高度为100px;那这时这个父元素的高度就等于子元素的高度100px了，如果子元素继续增高，那么父元素也会跟着增高。可是如果这时子元素设一个负的margin-bottom,比如-20px，因为负边距会影响到文档流，本来文档流的高度是从父元素的最顶端到子元素的最底端这段高度，现在子元素有一个margin-bottom:-20px;就相当于文档流要向上退后20px,这样整个文档流的高度就减少了20px了，那么父元素的高度也会跟着减少20px。在IE8+以及那些标准浏览器中，这还需要父元素拥有一个overflow:hidden的属性，因为父元素的高度变了，但子元素的高度并没有变，所以需要使子元素超出隐藏，但即使不设置overflow:hidden，父元素的高度也是变小了的，只不过这时子元素的高度会超出父元素。在IE6中则不需要，但需要触发它的hasLayout属性。所以以前所说的多列等高布局就是利用这个原理来实现的。
+            <h4>中间弹性区</h4>
+            <h4>中间弹性区</h4>
+            <h4>中间弹性区</h4>
+            <h4>中间弹性区</h4>
+            <h4>中间弹性区</h4>
+        </div>
+        <div class="left">
+            <h4>左边栏</h4>
+        </div>
+        <div class="right">
+            <h4>右边栏</h4>
+        </div>
+    </div>
+    <footer>
+        <h4>Footer内容区</h4>
+    </footer>
+</body>
+
+</html>
