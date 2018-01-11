@@ -1,0 +1,17 @@
+border 四条边框设置
+border-left 设置左边框，一般单独设置左边框样式使用
+border-right 设置右边框，一般单独设置右边框样式使用
+border-top 设置上边框，一般单独设置上边框样式使用
+border-bottom 设置下边框，一般单独设置下边框样式使用,有时可将下边框样式作为CSS下划线效果应用
+
+
+<div class="test-border">我是居中内容</div>
+.test-border {
+    border-top: 50px solid #ff0000;
+    border-bottom: 50px solid #00a000;
+    border-left: 50px solid #ff7f50;
+    border-right: 50px solid #436eee;
+    text-align: center;
+}
+
+当没有“我是居中内容”撑开是，或者说，把width和height都设置为零时，出现一个正方形，分割。
