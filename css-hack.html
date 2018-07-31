@@ -44,7 +44,10 @@
         background-color: #a200ff;
     }
     /* 仅IE7 识别 */
-    /* 一般情况下 我们区分IE7 只用 +background-color 配合 _background-color 就行了 如果必须写 .bb, x:-moz-any-link, x:default 这样的代码区分 Firefox3.5及以下 则谨记此写法对IE7也有效，故在其中要再重写一次 +background-color 或者使用 * +html .bb{background-color:blue;} 方法仅对 IE7 有效。可使用 @-moz-document url-prefix(){} 方法独立区分所有 firefox */
+    /* 一般情况下 我们区分IE7 只用 +background-color 配合 _background-color 就行了 
+       如果必须写 .bb, x:-moz-any-link, x:default 这样的代码区分 Firefox3.5及以下 则谨记此写法对IE7也有效，
+        故在其中要再重写一次 +background-color 或者使用 * +html .bb{background-color:blue;} 方法仅对 IE7 有效。
+        可使用 @-moz-document url-prefix(){} 方法独立区分所有 firefox */
 
     .browsers td {
         width: 8%;
