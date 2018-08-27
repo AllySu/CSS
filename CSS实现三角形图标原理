@@ -15,3 +15,38 @@ border-bottom 设置下边框，一般单独设置下边框样式使用,有时�
 }
 
 当没有“我是居中内容”撑开是，或者说，把width和height都设置为零时，出现一个正方形，分割。
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>css</title>
+    <style type="text/css">
+    div {
+        width: 0px;
+        height: 0px;
+        /* background-color: red; */
+        border-color: red transparent;
+        border-width: 50px 50px 0px 50px;
+        border-style: solid;
+
+        /* border-top: 50px solid bisque;
+        border-right: 50px solid cadetblue;
+        border-bottom: 50px solid magenta;
+        border-left: 50px solid aquamarine; */
+    }
+    </style>
+</head>
+
+<body>
+    <h3>三角形</h3>
+    <div></div>
+</body>
+
+</html>
+
+
+三角形的实现实际上是控制边框的变换，元素本身的宽高都为0px.四条边框都必须设置，即使是0px.并利用透明属性隐藏不需要显示的边框。
