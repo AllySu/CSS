@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+  <style type="text/css">
+    .img1{ background: url('prototype/prototype.png') no-repeat 0 0;
+      width: 900px;height: 800px;}
+      .img2{ background: url('prototype/timg.jpg') no-repeat;
+      width: 900px;height: 800px;}
+  </style>
+</head>
+<body>
+  <!-- <img src="prototype/prototype.png" alt=""> -->
+  <div class="img1"></div>
+  <div class="img2"></div>
+</body>
+</html>
+
+
+背景图片必须有的设置，div必须有宽度和高度，不像内容设置可以自己撑开。
