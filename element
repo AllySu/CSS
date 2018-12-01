@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+  <style type="text/css">
+    .img1{ background: url('prototype/prototype.png') no-repeat 0 0;
+      width: 900px;height: 800px;}
+      .img2{ background: url('prototype/timg.jpg') no-repeat;
+      width: 900px;height: 800px;}
+  </style>
+</head>
+<body>
+  <!-- <img src="prototype/prototype.png" alt=""> -->
+  <div class="img1"></div>
+  <div class="img2"></div>
+</body>
+</html>
+
+
+背景图片必须有的设置，div必须有宽度和高度，不像内容设置可以自己撑开。
+
+
+
+
+background-image: url("../image/pic.png0"), url("../image/pic1.png");
+/* 多张背景图时，先引入的图片在上一层后引入则在下一层 */
+
+
+
+float
+CSS 中规定的定位机制，其可实现块级元素同行显示并存在于文档流之中。浮动仅仅影响文档流中下一个紧邻的元素。
+
+Function.prototype.bind
+功能：通过参数指定函数调用者和函数参数并返回该函数的引用
+// functionObj.bind(thisArg[, arg1[, arg2[, ...]]])
+function Point(x, y) {
+  this.x = x;
+  this.y = y;
+}
+
+Point.prototype.move = function(x, y) {
+  this.x += x;
+  this.y += y;
+}
+
+var p = new Point(1, 1);
+var circle = {x: 1, y: 1, r: 1};
+var circleMoveRef = p.move.bind(circle, 2, 1);
+setTimeout(circleMoveRef, 1000); 
+
+circle  // {x: 3, y: 2, r: 1}
